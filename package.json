@@ -2,13 +2,17 @@
   "name": "dream-to-app",
   "version": "1.0.0",
   "description": "Transform any goal into a personalized app",
-  "main": "src/index.js",
+  "main": "src/main.jsx",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test-gemini": "node test-gemini-simple.js"
+    "start": "vite preview --port 3000",
+    "test-gemini": "node src/testGemini.js"
+  },
+  "engines": {
+    "node": ">=18.x"
   },
   "dependencies": {
     "react": "^18.2.0",
